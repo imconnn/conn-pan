@@ -3,6 +3,7 @@
 <mapper namespace="net.conn.potal.mapper.UserMapper">
   <resultMap id="BaseResultMap" type="net.conn.potal.entity.User">
     <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="account" jdbcType="VARCHAR" property="account"/>
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="password" jdbcType="VARCHAR" property="password" />
     <result column="phone" jdbcType="VARCHAR" property="phone" />
@@ -37,5 +38,10 @@
   <select id="selectAll" resultMap="BaseResultMap">
     select id, name, password, phone, createtime
     from user
+  </select>
+  <select id="selectPasswordByAccount" resultType="string">
+    SELECT password
+    FROM user
+    WHERE account=#{account}
   </select>
 </mapper>

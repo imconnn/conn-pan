@@ -20,6 +20,11 @@ public class User {
     private Integer id;
 
     /**
+     * Column:    account
+     */
+    private String account;
+
+    /**
      * 用户名
      *
      * Column:    name

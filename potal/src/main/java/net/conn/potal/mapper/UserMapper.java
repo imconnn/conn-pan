@@ -2,7 +2,9 @@ package net.conn.potal.mapper;
 
 import java.util.List;
 import net.conn.potal.entity.User;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -13,4 +15,6 @@ public interface UserMapper {
     List<User> selectAll();
 
     int updateByPrimaryKey(User record);
+
+    String selectPasswordByAccount(String account);
 }

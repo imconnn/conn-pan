@@ -50,7 +50,7 @@
 			<groupId>org.mybatis.generator</groupId>
             <artifactId>mybatis-generator-core</artifactId>
 			<version>${generator.version}</version>
-		</dependency>
+		</dependency><dependency><groupId>net.conn</groupId><artifactId>common</artifactId><version>0.0.1-SNAPSHOT</version></dependency>
 	</dependencies>
 
 	<build>

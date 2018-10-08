@@ -7,7 +7,7 @@
 	<artifactId>connpan</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
-		<module>potal</module>
+		<module>potal</module><module>common</module>
 	</modules>
 	<packaging>pom</packaging>
 
